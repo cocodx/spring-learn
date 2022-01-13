@@ -1,0 +1,6 @@
+# 对idea编辑器的基本设置
+.idea
+.iml
+out
+
+classes/
