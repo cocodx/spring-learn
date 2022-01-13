@@ -3,4 +3,9 @@
 *.iml
 out
 
+
 classes/
+target/
+spring-demo1/target/generated-sources/
+spring-demo1/target/generated-test-sources/
+spring-demo1/target/test-classes/
