@@ -15,7 +15,8 @@
   <artifactId>spring-demo1</artifactId>
   <version>1.0-SNAPSHOT</version>
   <description>
-    使用BeanDefinition接口的子接口AnnotatedBeanDefinition，去获取Bean的注解元数据
+    1、使用BeanDefinition接口的子接口AnnotatedBeanDefinition，去获取Bean的注解元数据 AnnotatedBeanDefinitionTest
+    2、注册同名beanName的BeanDefinition
   </description>
 
   <name>spring-demo1</name>
