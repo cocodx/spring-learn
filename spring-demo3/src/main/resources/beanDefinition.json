@@ -1,0 +1,208 @@
+[
+  {
+    "abstract": false,
+    "autowireCandidate": true,
+    "autowireMode": 0,
+    "beanClass": "com.springframework.learn.service.StudentServiceImpl",
+    "beanClassName": "com.springframework.learn.service.StudentServiceImpl",
+    "constructorArgumentValues": {
+      "argumentCount": 0,
+      "empty": true,
+      "genericArgumentValues": [],
+      "indexedArgumentValues": {}
+    },
+    "dependencyCheck": 0,
+    "enforceDestroyMethod": true,
+    "enforceInitMethod": true,
+    "lenientConstructorResolution": true,
+    "methodOverrides": {
+      "empty": true,
+      "overrides": []
+    },
+    "nonPublicAccessAllowed": true,
+    "primary": false,
+    "propertyValues": {
+      "converted": false,
+      "empty": true,
+      "propertyValueList": [],
+      "propertyValues": []
+    },
+    "prototype": false,
+    "qualifiers": [],
+    "resolvableType": {
+      "array": false,
+      "componentType": {
+        "array": false,
+        "componentType": {
+          "$ref": "@"
+        },
+        "generics": [],
+        "interfaces": [],
+        "source": {
+          "typeName": "org.springframework.core.ResolvableType$EmptyType@49993335"
+        },
+        "superType": {
+          "$ref": "@"
+        },
+        "type": {
+          "$ref": "$.resolvableType.componentType.source"
+        }
+      },
+      "generics": [],
+      "interfaces": [
+        {
+          "array": false,
+          "componentType": {
+            "$ref": "$.resolvableType.componentType"
+          },
+          "generics": [],
+          "interfaces": [],
+          "rawClass": "com.springframework.learn.service.StudentService",
+          "source": "com.springframework.learn.service.StudentService",
+          "superType": {
+            "$ref": "$.resolvableType.componentType"
+          },
+          "type": "com.springframework.learn.service.StudentService"
+        }
+      ],
+      "rawClass": "com.springframework.learn.service.StudentServiceImpl",
+      "source": "com.springframework.learn.service.StudentServiceImpl",
+      "superType": {
+        "array": false,
+        "componentType": {
+          "$ref": "$.resolvableType.componentType"
+        },
+        "generics": [],
+        "interfaces": [],
+        "rawClass": "java.lang.Object",
+        "source": "java.lang.Object",
+        "superType": {
+          "$ref": "$.resolvableType.componentType"
+        },
+        "type": "java.lang.Object"
+      },
+      "type": "com.springframework.learn.service.StudentServiceImpl"
+    },
+    "resolvedAutowireMode": 0,
+    "role": 0,
+    "scope": "",
+    "singleton": true,
+    "synthetic": false
+  },
+  {
+    "abstract": false,
+    "autowireCandidate": true,
+    "autowireMode": 0,
+    "beanClass": "com.springframework.learn.controller.StudentControllerProperties",
+    "beanClassName": "com.springframework.learn.controller.StudentControllerProperties",
+    "constructorArgumentValues": {
+      "argumentCount": 0,
+      "empty": true,
+      "genericArgumentValues": [],
+      "indexedArgumentValues": {}
+    },
+    "dependencyCheck": 0,
+    "enforceDestroyMethod": true,
+    "enforceInitMethod": true,
+    "lenientConstructorResolution": true,
+    "methodOverrides": {
+      "empty": true,
+      "overrides": []
+    },
+    "nonPublicAccessAllowed": true,
+    "primary": false,
+    "propertyValues": {
+      "converted": false,
+      "empty": false,
+      "propertyValueList": [
+        {
+          "converted": false,
+          "name": "name",
+          "optional": false,
+          "originalPropertyValue": {
+            "$ref": "@"
+          },
+          "value": "named controller properties"
+        },
+        {
+          "converted": false,
+          "name": "age",
+          "optional": false,
+          "originalPropertyValue": {
+            "$ref": "@"
+          },
+          "value": "25"
+        },
+        {
+          "converted": false,
+          "name": "studentService",
+          "optional": false,
+          "originalPropertyValue": {
+            "$ref": "@"
+          },
+          "value": {
+            "beanName": "studentServiceImpl",
+            "toParent": false
+          }
+        }
+      ],
+      "propertyValues": [
+        {
+          "$ref": "$.propertyValues.propertyValueList[0]"
+        },
+        {
+          "$ref": "$.propertyValues.propertyValueList[1]"
+        },
+        {
+          "$ref": "$.propertyValues.propertyValueList[2]"
+        }
+      ]
+    },
+    "prototype": false,
+    "qualifiers": [],
+    "resolvableType": {
+      "array": false,
+      "componentType": {
+        "array": false,
+        "componentType": {
+          "$ref": "@"
+        },
+        "generics": [],
+        "interfaces": [],
+        "source": {
+          "typeName": "org.springframework.core.ResolvableType$EmptyType@49993335"
+        },
+        "superType": {
+          "$ref": "@"
+        },
+        "type": {
+          "$ref": "$.resolvableType.componentType.source"
+        }
+      },
+      "generics": [],
+      "interfaces": [],
+      "rawClass": "com.springframework.learn.controller.StudentControllerProperties",
+      "source": "com.springframework.learn.controller.StudentControllerProperties",
+      "superType": {
+        "array": false,
+        "componentType": {
+          "$ref": "$.resolvableType.componentType"
+        },
+        "generics": [],
+        "interfaces": [],
+        "rawClass": "java.lang.Object",
+        "source": "java.lang.Object",
+        "superType": {
+          "$ref": "$.resolvableType.componentType"
+        },
+        "type": "java.lang.Object"
+      },
+      "type": "com.springframework.learn.controller.StudentControllerProperties"
+    },
+    "resolvedAutowireMode": 0,
+    "role": 0,
+    "scope": "",
+    "singleton": true,
+    "synthetic": false
+  }
+]
