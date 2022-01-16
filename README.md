@@ -7,3 +7,6 @@
 
 ### spring-demo2
 介绍：手动注册BeanDefinition，通过构造函数注入，通过set()方法注入
+
+### spring-demo3
+介绍：自定义applicationContext，从json文件读取beanDefinition
