@@ -7,6 +7,7 @@
   <packaging>pom</packaging>
     <modules>
         <module>spring-demo1</module>
+      <module>spring-demo2</module>
     </modules>
 
     <groupId>com.springframework.learn</groupId>
