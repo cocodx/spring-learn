@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!--起到一个继承spring-learn的pom配置的关系-->
+  <parent>
+    <groupId>com.springframework.learn</groupId>
+    <artifactId>spring-learn</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
+  <!--有了parent标签里面的groupId，本项目可以注释掉，直接继承parent-->
+  <!--  <groupId>com.springframework.learn</groupId>-->
+  <artifactId>spring-demo4</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <name>spring-demo4</name>
+  <!-- FIXME change it to the project's website -->
+  <url>http://www.example.com</url>
+  <description>
+    从properties文件中读取beanDefinition
+  </description>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-beans</artifactId>
+    </dependency>
+
+  </dependencies>
+
+
+</project>

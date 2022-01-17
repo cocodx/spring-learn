@@ -9,6 +9,7 @@
         <module>spring-demo1</module>
       <module>spring-demo2</module>
       <module>spring-demo3</module>
+        <module>spring-demo4</module>
     </modules>
 
     <groupId>com.springframework.learn</groupId>
