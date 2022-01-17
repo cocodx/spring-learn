@@ -10,3 +10,6 @@
 
 ### spring-demo3
 介绍：自定义applicationContext，从json文件读取beanDefinition
+
+### spring-demo3
+介绍：PropertyBeanDefinitionReader，从properties文件中读取bean definition
