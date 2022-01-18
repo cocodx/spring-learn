@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                http://www.springframework.org/schema/util  http://www.springframework.org/schema/util/spring-util.xsd">
+
+
+    <util:properties id="properties" location="classpath:test.properties"/>
+
+    <bean class="com.springframework.learn.testproperties.TestPropertiesBean">
+<!--        注意，这里的value，#{properties.name},点号前面引用了上面的properties bean的id，点号后面是文件里key的名称-->
+        <property name="appName" value="#{properties.name}"/>
+    </bean>
+
+</beans>

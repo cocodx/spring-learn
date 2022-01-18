@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                http://www.springframework.org/schema/util  http://www.springframework.org/schema/util/spring-util.xsd">
+
+
+    <util:list id="testList" list-class="java.util.ArrayList">
+        <value>a</value>
+        <value>b</value>
+        <value>c</value>
+    </util:list>
+
+    <bean id="testPropertiesBeanA" class="com.springframework.learn.testproperties.TestPropertiesBean">
+        <property name="appName" value="xxxxx"/>
+    </bean>
+    <bean id="testPropertiesBeanB" class="com.springframework.learn.testproperties.TestPropertiesBean">
+        <property name="appName" value="yyyyy"/>
+    </bean>
+
+    <util:list id="testBeanList" list-class="java.util.ArrayList">
+        <ref bean="testPropertiesBeanA"/>
+        <ref bean="testPropertiesBeanB"/>
+    </util:list>
+
+
+</beans>

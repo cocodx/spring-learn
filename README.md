@@ -16,3 +16,6 @@
 
 ### spring-demo5
 介绍：从xml文件中拿到什么，对xml的使用
+TestUtilListElement:对<util:list>标签使用
+TestProperties:对<util:properties>标签使用
+TestConstant:对<util:constant>标签使用

@@ -9,7 +9,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 /**
  * @author 刘刚
  * @version 1.0
- * @description 使用util里面的constant
+ * @description 使用util这个namespace的里面的constant标签
  * @date 18/1/2022 上午1:21
  */
 public class TestConstant {

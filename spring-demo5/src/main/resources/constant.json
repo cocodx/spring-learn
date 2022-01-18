@@ -2,7 +2,7 @@
   "abstract": false,
   "autowireCandidate": true,
   "autowireMode": 0,
-
+  "_comment1_": "这是一个注释：可以看到这个常量值的bean definition是一个工厂类",
   "beanClass": "org.springframework.beans.factory.config.FieldRetrievingFactoryBean",
   "beanClassName": "org.springframework.beans.factory.config.FieldRetrievingFactoryBean",
   "constructorArgumentValues": {

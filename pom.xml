@@ -79,6 +79,16 @@
         <version>${fastjson.version}</version>
       </dependency>
       <!--json依赖 end-->
+
+      <!--不用写getter方法和equals start-->
+      <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>1.18.22</version>
+        <scope>provided</scope>
+      </dependency>
+      <!--不用写getter方法和equals end-->
+
     </dependencies>
   </dependencyManagement>
 
