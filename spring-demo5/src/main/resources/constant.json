@@ -1,0 +1,200 @@
+{
+  "abstract": false,
+  "autowireCandidate": true,
+  "autowireMode": 0,
+
+  "beanClass": "org.springframework.beans.factory.config.FieldRetrievingFactoryBean",
+  "beanClassName": "org.springframework.beans.factory.config.FieldRetrievingFactoryBean",
+  "constructorArgumentValues": {
+    "argumentCount": 0,
+    "empty": true,
+    "genericArgumentValues": [],
+    "indexedArgumentValues": {}
+  },
+  "dependencyCheck": 0,
+  "enforceDestroyMethod": true,
+  "enforceInitMethod": true,
+  "lenientConstructorResolution": true,
+  "methodOverrides": {
+    "empty": true,
+    "overrides": []
+  },
+  "nonPublicAccessAllowed": true,
+  "primary": false,
+  "propertyValues": {
+    "converted": false,
+    "empty": false,
+    "propertyValueList": [
+      {
+        "converted": false,
+        "name": "staticField",
+        "optional": false,
+        "originalPropertyValue": {
+          "$ref": "@"
+        },
+        "value": "java.sql.Connection.TRANSACTION_SERIALIZABLE"
+      }
+    ],
+    "propertyValues": [
+      {
+        "$ref": "$.propertyValues.propertyValueList[0]"
+      }
+    ]
+  },
+  "prototype": false,
+  "qualifiers": [],
+  "resolvableType": {
+    "array": false,
+    "componentType": {
+      "array": false,
+      "componentType": {
+        "$ref": "@"
+      },
+      "generics": [],
+      "interfaces": [],
+      "source": {
+        "typeName": "org.springframework.core.ResolvableType$EmptyType@1f021e6c"
+      },
+      "superType": {
+        "$ref": "@"
+      },
+      "type": {
+        "$ref": "$.resolvableType.componentType.source"
+      }
+    },
+    "generics": [],
+    "interfaces": [
+      {
+        "array": false,
+        "componentType": {
+          "$ref": "$.resolvableType.componentType"
+        },
+        "generics": [
+          {
+            "array": false,
+            "componentType": {
+              "$ref": "$.resolvableType.componentType"
+            },
+            "generics": [],
+            "interfaces": [],
+            "rawClass": "java.lang.Object",
+            "source": "java.lang.Object",
+            "superType": {
+              "$ref": "$.resolvableType.componentType"
+            },
+            "type": "java.lang.Object"
+          }
+        ],
+        "interfaces": [],
+        "rawClass": "org.springframework.beans.factory.FactoryBean",
+        "source": {
+          "actualTypeArguments": [
+            "java.lang.Object"
+          ],
+          "rawType": "org.springframework.beans.factory.FactoryBean",
+          "typeName": "org.springframework.beans.factory.FactoryBean<java.lang.Object>"
+        },
+        "superType": {
+          "$ref": "$.resolvableType.componentType"
+        },
+        "type": {
+          "$ref": "$.resolvableType.interfaces[0].source"
+        }
+      },
+      {
+        "array": false,
+        "componentType": {
+          "$ref": "$.resolvableType.componentType"
+        },
+        "generics": [],
+        "interfaces": [
+          {
+            "array": false,
+            "componentType": {
+              "$ref": "$.resolvableType.componentType"
+            },
+            "generics": [],
+            "interfaces": [],
+            "rawClass": "org.springframework.beans.factory.Aware",
+            "source": "org.springframework.beans.factory.Aware",
+            "superType": {
+              "$ref": "$.resolvableType.componentType"
+            },
+            "type": "org.springframework.beans.factory.Aware"
+          }
+        ],
+        "rawClass": "org.springframework.beans.factory.BeanNameAware",
+        "source": "org.springframework.beans.factory.BeanNameAware",
+        "superType": {
+          "$ref": "$.resolvableType.componentType"
+        },
+        "type": "org.springframework.beans.factory.BeanNameAware"
+      },
+      {
+        "array": false,
+        "componentType": {
+          "$ref": "$.resolvableType.componentType"
+        },
+        "generics": [],
+        "interfaces": [
+          {
+            "array": false,
+            "componentType": {
+              "$ref": "$.resolvableType.componentType"
+            },
+            "generics": [],
+            "interfaces": [],
+            "rawClass": "org.springframework.beans.factory.Aware",
+            "source": "org.springframework.beans.factory.Aware",
+            "superType": {
+              "$ref": "$.resolvableType.componentType"
+            },
+            "type": "org.springframework.beans.factory.Aware"
+          }
+        ],
+        "rawClass": "org.springframework.beans.factory.BeanClassLoaderAware",
+        "source": "org.springframework.beans.factory.BeanClassLoaderAware",
+        "superType": {
+          "$ref": "$.resolvableType.componentType"
+        },
+        "type": "org.springframework.beans.factory.BeanClassLoaderAware"
+      },
+      {
+        "array": false,
+        "componentType": {
+          "$ref": "$.resolvableType.componentType"
+        },
+        "generics": [],
+        "interfaces": [],
+        "rawClass": "org.springframework.beans.factory.InitializingBean",
+        "source": "org.springframework.beans.factory.InitializingBean",
+        "superType": {
+          "$ref": "$.resolvableType.componentType"
+        },
+        "type": "org.springframework.beans.factory.InitializingBean"
+      }
+    ],
+    "rawClass": "org.springframework.beans.factory.config.FieldRetrievingFactoryBean",
+    "source": "org.springframework.beans.factory.config.FieldRetrievingFactoryBean",
+    "superType": {
+      "array": false,
+      "componentType": {
+        "$ref": "$.resolvableType.componentType"
+      },
+      "generics": [],
+      "interfaces": [],
+      "rawClass": "java.lang.Object",
+      "source": "java.lang.Object",
+      "superType": {
+        "$ref": "$.resolvableType.componentType"
+      },
+      "type": "java.lang.Object"
+    },
+    "type": "org.springframework.beans.factory.config.FieldRetrievingFactoryBean"
+  },
+  "resolvedAutowireMode": 0,
+  "role": 0,
+  "scope": "",
+  "singleton": true,
+  "synthetic": false
+}

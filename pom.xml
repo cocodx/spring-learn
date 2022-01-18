@@ -6,10 +6,11 @@
   <!--打包方式，pom的形式：使用分模块管理，都会有一个父级模块-->
   <packaging>pom</packaging>
     <modules>
-        <module>spring-demo1</module>
+      <module>spring-demo1</module>
       <module>spring-demo2</module>
       <module>spring-demo3</module>
-        <module>spring-demo4</module>
+      <module>spring-demo4</module>
+      <module>spring-demo5</module>
     </modules>
 
     <groupId>com.springframework.learn</groupId>

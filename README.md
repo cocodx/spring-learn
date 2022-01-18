@@ -11,5 +11,8 @@
 ### spring-demo3
 介绍：自定义applicationContext，从json文件读取beanDefinition
 
-### spring-demo3
+### spring-demo4
 介绍：PropertyBeanDefinitionReader，从properties文件中读取bean definition
+
+### spring-demo5
+介绍：从xml文件中拿到什么，对xml的使用
