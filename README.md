@@ -28,3 +28,4 @@
 TestUtilListElement:对<util:list>标签使用  
 TestProperties:对<util:properties>标签使用  
 TestConstant:对<util:constant>标签使用  
+TestPropertyPlaceHolder:对<context::property-placeholder>标签使用
