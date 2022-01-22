@@ -35,3 +35,6 @@ MainClassForTestComponentScan:对<context:component-scan>标签使用
 ### spring-java-aspectj-agent6
 介绍：使用java的instrumentation，java命令启动，指定agent参数，agent jar里，
 有一个premain方法，这个方法注册一个字节码转换器
+
+### spring-java-ioaspectj-agent7
+介绍：使用aspectj来玩LTW=load-time-weaving

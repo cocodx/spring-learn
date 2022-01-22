@@ -12,6 +12,8 @@
       <module>spring-demo4</module>
       <module>spring-demo5</module>
       <module>spring-java-instrumentation-agent6</module>
+      <!--aspectj前面加io是因为，项目排序-->
+      <module>spring-java-ioaspectj-agent7</module>
     </modules>
 
     <groupId>com.springframework.learn</groupId>
@@ -97,6 +99,14 @@
         <version>3.25.0-GA</version>
       </dependency>
       <!-- java 字节码类库 end-->
+
+      <!-- AspectJ编译器 start-->
+      <dependency>
+        <groupId>org.aspectj</groupId>
+        <artifactId>aspectjweaver</artifactId>
+        <version>1.8.2</version>
+      </dependency>
+      <!-- AspectJ编译器 end-->
 
     </dependencies>
   </dependencyManagement>

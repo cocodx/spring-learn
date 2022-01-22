@@ -11,36 +11,38 @@
     <version>1.0-SNAPSHOT</version>
   </parent>
 
-  <!--有了parent标签里面的groupId，本项目可以注释掉，直接继承parent-->
-  <!--  <groupId>com.springframework.learn</groupId>-->
-  <artifactId>spring-java-instrumentation-agent6</artifactId>
-  <!--artifactId这个就是文件夹的名字-->
-<!--  <artifactId>test</artifactId>-->
+  <!--有了parent的groupId可以继承使用-->
+<!--  <groupId>com.springframework.learn</groupId>-->
+  <artifactId>spring-java-ioaspectj-agent7</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>spring-java-aspectj-agent6</name>
+  <name>spring-java-aspectj-agent7</name>
+
   <description>
-    LTW：load-time-weaving
-    java instrumentation机制，java命令启动，指定agent参数，agent jar里面，有一个premain方法，该方法注册一个字节码转换器
+    使用aspectj来搞load time weaving
   </description>
 
   <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <base.lib.path>${project.basedir}/src/main/lib</base.lib.path>
   </properties>
 
   <dependencies>
-
-    <!-- java 字节码类库 start-->
     <dependency>
-      <groupId>org.javassist</groupId>
-      <artifactId>javassist</artifactId>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
     </dependency>
-    <!-- java 字节码类库 end-->
+
+    <dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjweaver</artifactId>
+    </dependency>
   </dependencies>
 
   <build>
     <plugins>
-      <!-- 将所依赖的第三方jar包打入target下的lib目录 -->
+    <!-- 将所依赖的第三方jar包打入target下的lib目录 -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-dependency-plugin</artifactId>
@@ -59,27 +61,6 @@
           </execution>
         </executions>
       </plugin>
-
-      <!--设置MF文件的Premain-Class属性和Class-path属性这个是用空格隔开把，还是用逗号啊-->
-      <plugin>
-        <artifactId>maven-jar-plugin</artifactId>
-        <configuration>
-          <archive>
-            <manifest>
-              <addClasspath>true</addClasspath>
-            </manifest>
-            <manifestEntries>
-              <Premain-Class>
-                com.springframework.learn.service.Premain
-              </Premain-Class>
-              <Class-path>
-                lib/javassist-3.25.0-GA.jar
-              </Class-path>
-            </manifestEntries>
-          </archive>
-        </configuration>
-      </plugin>
     </plugins>
   </build>
-
 </project>
