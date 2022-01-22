@@ -11,7 +11,7 @@
       <module>spring-demo3</module>
       <module>spring-demo4</module>
       <module>spring-demo5</module>
-      <module>spring-java-aspectj-agent6</module>
+      <module>spring-java-instrumentation-agent6</module>
     </modules>
 
     <groupId>com.springframework.learn</groupId>
