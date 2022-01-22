@@ -5,7 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 /**
  * @author 刘刚
  * @version 1.0
- * @description
+ * @description 使用：context:property-placeholder
  * @date 18/1/2022 下午9:33
  */
 public class TestPropertyPlaceholder {

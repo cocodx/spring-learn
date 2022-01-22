@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                http://www.springframework.org/schema/util  http://www.springframework.org/schema/util/spring-util.xsd
+                http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+
+<!--添加了这个注解之后，可以激活其他注解 @PostConstruct @PreDestroy and @Resource @Required and @Autowired,不能激活@Transactional-->
+    <!--<context:annotation-config/>-->
+    <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
+
+    <bean class="com.springframework.learn.context.TestService"/>
+
+    <bean name="testController" class="com.springframework.learn.context.TestController"/>
+
+</beans>
