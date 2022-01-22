@@ -10,3 +10,6 @@ Premain-Class: com.springframework.learn.service.Premain
 4、执行：
 
 java -javaagent:spring-java-aspectj-agent6-1.0-SNAPSHOT.jar -cp spring-java-aspectj-agent6-1.0-SNAPSHOT.jar com.springframework.learn.TestMainJar
+
+后记：
+经过优化之后，只用执行clean package，然后执行第四步就好了
