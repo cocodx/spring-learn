@@ -15,6 +15,7 @@
 介绍：PropertyBeanDefinitionReader，从properties文件中读取bean definition
 
 ### spring-demo5
+介绍：对一些标签的使用  
 |namespace|element|
 |:-|:-|
 |util|constant、property-path、list、set、map、properties|  
