@@ -11,6 +11,7 @@
       <module>spring-demo3</module>
       <module>spring-demo4</module>
       <module>spring-demo5</module>
+      <module>spring-java-aspectj-agent6</module>
     </modules>
 
     <groupId>com.springframework.learn</groupId>
@@ -88,6 +89,14 @@
         <scope>provided</scope>
       </dependency>
       <!--不用写getter方法和equals end-->
+
+      <!-- java 字节码类库 start-->
+      <dependency>
+        <groupId>org.javassist</groupId>
+        <artifactId>javassist</artifactId>
+        <version>3.25.0-GA</version>
+      </dependency>
+      <!-- java 字节码类库 end-->
 
     </dependencies>
   </dependencyManagement>
