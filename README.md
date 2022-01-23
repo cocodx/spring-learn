@@ -38,3 +38,6 @@ MainClassForTestComponentScan:对<context:component-scan>标签使用
 
 ### spring-java-ioaspectj-agent7
 介绍：使用aspectj来玩LTW=load-time-weaving
+
+### spring-java-ioaspectj-instrument8
+介绍：spring-instrumentation集成aspectj的demo  

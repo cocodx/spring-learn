@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!--起到一个继承spring-learn的pom配置的关系-->
+  <parent>
+    <groupId>com.springframework.learn</groupId>
+    <artifactId>spring-learn</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
+<!--  <groupId>com.springframework.learn</groupId>-->
+  <artifactId>spring-java-ioaspectj-instrument8</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <name>spring-java-ioaspectj-instrument8</name>
+  <description>
+    spring-instrumentation集成aspectj的demo
+  </description>
+
+  <properties>
+
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- AspectJ编译器 start-->
+    <dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjweaver</artifactId>
+    </dependency>
+    <!-- AspectJ编译器 end-->
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-instrument</artifactId>
+    </dependency>
+  </dependencies>
+
+
+</project>

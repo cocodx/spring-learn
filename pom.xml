@@ -14,6 +14,7 @@
       <module>spring-java-instrumentation-agent6</module>
       <!--aspectj前面加io是因为，项目排序-->
       <module>spring-java-ioaspectj-agent7</module>
+      <module>spring-java-ioaspectj-instrument8</module>
     </modules>
 
     <groupId>com.springframework.learn</groupId>
@@ -65,6 +66,11 @@
       <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-aop</artifactId>
+        <version>${spring.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-instrument</artifactId>
         <version>${spring.version}</version>
       </dependency>
       <!--spring的jar包依赖 end-->

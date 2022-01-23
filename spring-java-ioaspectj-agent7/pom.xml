@@ -34,10 +34,12 @@
       <scope>test</scope>
     </dependency>
 
+    <!-- AspectJ编译器 start-->
     <dependency>
       <groupId>org.aspectj</groupId>
       <artifactId>aspectjweaver</artifactId>
     </dependency>
+    <!-- AspectJ编译器 end-->
   </dependencies>
 
   <build>
