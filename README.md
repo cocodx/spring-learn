@@ -41,3 +41,6 @@ MainClassForTestComponentScan:对<context:component-scan>标签使用
 
 ### spring-java-ioaspectj-instrument8
 介绍：spring-instrumentation集成aspectj的demo  
+
+### vspring-aop-overview9
+介绍：使用spring-aop的demo
