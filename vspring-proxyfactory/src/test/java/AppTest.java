@@ -81,7 +81,9 @@ public class AppTest {
     public void createJdkDynamicProxy(){
         ProxyFactory proxyFactory = new ProxyFactory();
         Performer performer = new Performer();
+        //配置target，代理
         proxyFactory.setTarget(performer);
+        //配置接口，代理具备的功能
         proxyFactory.addInterface(Perform.class);
 
         Perform proxy = (Perform) proxyFactory.getProxy();
@@ -98,6 +100,7 @@ public class AppTest {
         proxyFactory.setTarget(performer);
         proxyFactory.addInterface(Perform.class);
 
+        //配置额外的切面（可选）
         //advisor几乎等于 切点+通知
         DefaultPointcutAdvisor advisor = new DefaultPointcutAdvisor();
         advisor.setAdvice(new MethodInterceptor() {
@@ -108,10 +111,8 @@ public class AppTest {
                 return result;
             }
         });
-
         //记录耗时
 //        advisor.setAdvice(new PerformanceMonitorInterceptor ());
-
         proxyFactory.addAdvisor(advisor);
 
         Perform proxy = (Perform) proxyFactory.getProxy();
