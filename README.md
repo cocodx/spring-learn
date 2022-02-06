@@ -43,4 +43,7 @@ MainClassForTestComponentScan:对<context:component-scan>标签使用
 介绍：spring-instrumentation集成aspectj的demo  
 
 ### vspring-aop-overview9
-介绍：使用spring-aop的demo
+介绍：使用spring-aop的demo  
+
+### vspring-proxyfactory
+介绍：spring-aop的ProxyFactory的使用

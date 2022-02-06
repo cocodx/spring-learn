@@ -16,6 +16,7 @@
       <module>spring-java-ioaspectj-agent7</module>
       <module>spring-java-ioaspectj-instrument8</module>
       <module>vspring-aop-overview9</module>
+      <module>vspring-proxyfactory</module>
     </modules>
 
     <groupId>com.springframework.learn</groupId>
@@ -97,7 +98,7 @@
         <groupId>org.projectlombok</groupId>
         <artifactId>lombok</artifactId>
         <version>1.18.22</version>
-        <scope>provided</scope>
+        <scope>compile</scope>
       </dependency>
       <!--不用写getter方法和equals end-->
 
