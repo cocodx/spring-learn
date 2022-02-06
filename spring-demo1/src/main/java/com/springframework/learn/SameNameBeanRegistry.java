@@ -18,7 +18,7 @@ public class SameNameBeanRegistry {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext(new String[]{"beanDefinition.xml"},false,null);
         //配置：允许同名beanName的bean覆盖.默认true,Springboot里面默认是false
-        applicationContext.setAllowBeanDefinitionOverriding(true);
+        applicationContext.setAllowBeanDefinitionOverriding(false);
         applicationContext.refresh();
 
         //get work 测试：studentService是否注册进去， ok
