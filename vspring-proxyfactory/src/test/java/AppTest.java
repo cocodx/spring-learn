@@ -1,6 +1,8 @@
 import com.springframework.learn.service.Perform;
 import com.springframework.learn.service.Performer;
 import lombok.extern.slf4j.Slf4j;
+import net.sf.cglib.proxy.Enhancer;
+import net.sf.cglib.proxy.MethodProxy;
 import org.aopalliance.intercept.MethodInterceptor;
 import org.aopalliance.intercept.MethodInvocation;
 import org.junit.Test;
@@ -120,5 +122,33 @@ public class AppTest {
         proxy.sing();
         log.debug("xxxxxxxxxxxx");
 //        System.out.println(String.format("proxy :%s",proxy));
+    }
+
+    /**
+     * 使用cglib进行代理
+     */
+    @Test
+    public void createCglibDynamic(){
+        Enhancer enhancer = new Enhancer();
+        enhancer.setSuperclass(Performer.class);
+        enhancer.setCallback(new net.sf.cglib.proxy.MethodInterceptor() {
+            /**
+             * @param obj   cglib生成的对象
+             * @param method 被代理的对象方法
+             * @param args 方法入参
+             * @param proxy 代理方法
+             * @return
+             * @throws Throwable
+             */
+            @Override
+            public Object intercept(Object obj, Method method, Object[] args, MethodProxy proxy) throws Throwable {
+                log.info("before");
+                Object object = proxy.invokeSuper(obj,args);
+                log.info("after");
+                return object;
+            }
+        });
+        Performer perform = (Performer) enhancer.create();
+        perform.eat();
     }
 }
