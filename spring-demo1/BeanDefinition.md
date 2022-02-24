@@ -4,6 +4,7 @@ bean是一個對象，有名字，有class類型，有scope（單例，prototype
 那是不是每個bean都是這樣的，還真是這樣的。
 BeanDefinition就是每個bean的模板，最近寫了年終總結，hr小姐姐給我們發了模板，上面姓名啊，部門啊，職位啊，述職的基本格式啊，都是固定的，我們只要拿來，填上自己的信息就行了，那我們是不是可以抽象一下，
 搞個class啊，比如下面的格式：
+```
 public class SpringDefinition{
   //bean class名稱
   String beanClassName;
@@ -22,3 +23,4 @@ public class SpringDefinition{
   //是否為主候選的bean
   boolean primary;
 }
+```
