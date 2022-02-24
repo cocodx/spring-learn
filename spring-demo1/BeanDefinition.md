@@ -76,7 +76,7 @@ public class SpringDefinition{
   可以看這個接口的繼承圖：
   ![image](https://user-images.githubusercontent.com/97614802/155446523-e0bc5576-3a15-4cb9-8082-7a51dfbc18fd.png)
 
- ###可以獲取注解信息的子接口AnnotatedBeanDefinition
+ ### 可以獲取注解信息的子接口AnnotatedBeanDefinition
  我們可以看到，BeanDefinition有一個子接口，是AnnotatedBeanDefinition。這個接口定義如下：
  ```
  public interface AnnotatedBeanDefinition extends BeanDefinition {
@@ -93,7 +93,8 @@ public class SpringDefinition{
 可以想一想有什麽用，這個接口能獲取到bean definition中對應bean class上標注的注解元數據。
 比如下面的controller實例：
 ![image](https://user-images.githubusercontent.com/97614802/155446922-b9b1a41d-a148-43a1-bdac-36869dbe1cea.png)
-那這個AnnotatedBeanDefinition就能獲取到controller中的value字段
+
+那這個AnnotatedBeanDefinition就能獲取到controller中的value字段  
 我這裏也寫了一個簡答的例子，如下：
 
   
