@@ -39,3 +39,66 @@ public class SpringDefinition{
  * @author Rob Harrop
  * @since 19.03.2004
  ```
+ 這裏說的是，bean definition描述一個bean實例的各種屬性，尤其聲明了這是一個最小化接口，主要目的是允許bean factory後置處理器，對bean property和
+ 其他元數據進行修改，而且2004的接口，可想而知，是這麽多核心的api。
+ ```
+ public interface BeanDefinition extends AttributeAccessor,BeanMetadataElement{
+  String getParentName();
+  void setParentName(String parentName);
+  String getBeanClassName();
+  void setBeanClassName(String beanClassName);
+  String getFactoryBeanName();
+  void setFactoryBeanName(String factoryBeanName);
+  String scope;
+  void setScope(String scope);
+  boolean isLazyInit();
+  void setLazyInit(boolean lazyInit);
+  String[] getDependsOn();
+  void setDependsOn(String[] dependsOn);
+  boolean isAutowireCandidate();
+  void setAutowireCandidate(boolean autowireCandidate);
+  boolean isPrimary();
+  void setPrimary(boolean primary);
+  ConstructorArgumentValues getConstructorArgumentValues();
+  MutablePropertyValues getPropertyValues();
+  boolean isSingleton();
+  boolean osPrototype();
+  boolean isAbstract();
+  int getRole();
+  String getDescription();
+  String getResourceDescription();
+  BeanDefinition getOrigintingBeanDefinition(); 
+ }
+  ```
+  大家仔細看看，是不是其實和我們定義的class差不多呢，主要都是一些set、get方法。裏面的字段，下一個md，仔細吵吵，會結合一些融合貫通的地方。
+  ###BeanDefinition接口的實現有哪些
+  可以看到，這裏有兩個，標紅的，因爲他們特殊，特殊在他們不屬於spring-beans包，而是在spring-context包裏。后邊遇到了我們再bibi
+  可以看這個接口的繼承圖：
+  ![image](https://user-images.githubusercontent.com/97614802/155446523-e0bc5576-3a15-4cb9-8082-7a51dfbc18fd.png)
+
+ ###可以獲取注解信息的子接口AnnotatedBeanDefinition
+ 我們可以看到，BeanDefinition有一個子接口，是AnnotatedBeanDefinition。這個接口定義如下：
+ ```
+ public interface AnnotatedBeanDefinition extends BeanDefinition {
+
+	/**
+	 * Obtain the annotation metadata (as well as basic class metadata)
+	 * for this bean definition's bean class.
+	 * @return the annotation metadata object (never {@code null})
+	 */
+	AnnotationMetadata getMetadata();
+
+}
+  ```
+可以想一想有什麽用，這個接口能獲取到bean definition中對應bean class上標注的注解元數據。
+比如下面的controller實例：
+![image](https://user-images.githubusercontent.com/97614802/155446922-b9b1a41d-a148-43a1-bdac-36869dbe1cea.png)
+那這個AnnotatedBeanDefinition就能獲取到controller中的value字段
+我這裏也寫了一個簡答的例子，如下：
+
+  
+  
+  
+  
+  
+  
