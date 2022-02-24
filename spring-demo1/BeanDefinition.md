@@ -26,6 +26,7 @@ public class SpringDefinition{
 ```
 實話説，是可以的，一些簡單的，輕量級ioc就是這麽玩的，但是spring作爲優秀代碼的代表，肯定不能這麽low，接口的抽象性要的多，方便我們替換的不同的實現，該用接口來
 抽象，肯定要抽象為接口。
+```
  * A BeanDefinition describes a bean instance, which has property values,
  * constructor argument values, and further information supplied by
  * concrete implementations.
@@ -37,3 +38,4 @@ public class SpringDefinition{
  * @author Juergen Hoeller
  * @author Rob Harrop
  * @since 19.03.2004
+ ```
