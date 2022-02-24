@@ -97,8 +97,13 @@ public class SpringDefinition{
 那這個AnnotatedBeanDefinition就能獲取到controller中的value字段  
 我這裏也寫了一個簡答的例子，如下：
 
-  
-  
+  AbstractBeanDefinition充当了基本实现，基本上，该实现的方法都实现了，除了一个CloneBeanDefinition()
+   
+   GenericBeanDefinition，感觉很重要，我们看看  
+   AnnotatedGenericBeanDefinition，多了获取BeanClass的注解的功能。  
+   ScannedGenericBeanDefinition位于spring-context，使用asm  
+   AnnotatedGenericBeanDefinition，位于spring-beans，使用反射  
+   
   
   
   
