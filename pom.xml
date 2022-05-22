@@ -17,6 +17,10 @@
       <module>spring-java-ioaspectj-instrument8</module>
       <module>vspring-aop-overview9</module>
       <module>vspring-proxyfactory</module>
+        <module>spring-demo6</module>
+        <module>simple-ioc</module>
+        <module>springboot-autoconfiguration-analysis</module>
+      <module>simple-springioc</module>
     </modules>
 
     <groupId>com.springframework.learn</groupId>

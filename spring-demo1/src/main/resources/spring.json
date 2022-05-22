@@ -1,0 +1,140 @@
+[
+  {
+    "abstract": false,
+    "autowireCandidate": true,
+    "autowireMode": 0,
+    "beanClass": "com.springframework.learn.readjson.TestService",
+    "beanClassName": "com.springframework.learn.readjson.TestService",
+    "constructorArgumentValues": {
+      "argumentCount": 0,
+      "empty": true,
+      "genericArgumentValues": [],
+      "indexedArgumentValues": {}
+    },
+    "dependencyCheck": 0,
+    "enforceDestroyMethod": true,
+    "enforceInitMethod": true,
+    "lazyInit": false,
+    "lenientConstructorResolution": true,
+    "methodOverrides": {
+      "empty": true,
+      "overrides": []
+    },
+    "nonPublicAccessAllowed": true,
+    "primary": false,
+    "propertyValues": {
+      "converted": false,
+      "empty": true,
+      "propertyValueList": [],
+      "propertyValues": []
+    },
+    "prototype": false,
+    "qualifiers": [],
+    "resolvableType": {
+      "array": false,
+      "componentType": {
+        "$ref": "@"
+      },
+      "generics": [],
+      "interfaces": [],
+      "source": {
+        "typeName": "org.springframework.core.ResolvableType$EmptyType@1f021e6c"
+      },
+      "superType": {
+        "$ref": "@"
+      },
+      "type": {
+        "$ref": "$.resolvableType.source"
+      }
+    },
+    "resolvedAutowireMode": 0,
+    "resource": {
+      "description": "class path resource [readJson.xml]",
+      "file": "D:\\code\\IDEA_workspace\\spring-learn\\spring-demo1\\target\\classes\\readJson.xml",
+      "filename": "readJson.xml",
+      "open": false,
+      "path": "readJson.xml",
+      "readable": true,
+      "uRI": "file:/D:/code/IDEA_workspace/spring-learn/spring-demo1/target/classes/readJson.xml",
+      "uRL": "file:/D:/code/IDEA_workspace/spring-learn/spring-demo1/target/classes/readJson.xml"
+    },
+    "resourceDescription": "class path resource [readJson.xml]",
+    "role": 0,
+    "scope": "",
+    "singleton": true,
+    "synthetic": false
+  },
+  {
+    "abstract": false,
+    "autowireCandidate": true,
+    "autowireMode": 0,
+    "beanClass": "com.springframework.learn.readjson.TestController",
+    "beanClassName": "com.springframework.learn.readjson.TestController",
+    "constructorArgumentValues": {
+      "argumentCount": 1,
+      "empty": false,
+      "genericArgumentValues": [],
+      "indexedArgumentValues": {
+        "0": {
+          "converted": false,
+          "value": {
+            "beanName": "testService",
+            "toParent": false
+          }
+        }
+      }
+    },
+    "dependencyCheck": 0,
+    "enforceDestroyMethod": true,
+    "enforceInitMethod": true,
+    "lazyInit": false,
+    "lenientConstructorResolution": true,
+    "methodOverrides": {
+      "empty": true,
+      "overrides": []
+    },
+    "nonPublicAccessAllowed": true,
+    "primary": false,
+    "propertyValues": {
+      "converted": false,
+      "empty": true,
+      "propertyValueList": [],
+      "propertyValues": []
+    },
+    "prototype": false,
+    "qualifiers": [],
+    "resolvableType": {
+      "array": false,
+      "componentType": {
+        "$ref": "@"
+      },
+      "generics": [],
+      "interfaces": [],
+      "source": {
+        "typeName": "org.springframework.core.ResolvableType$EmptyType@1f021e6c"
+      },
+      "superType": {
+        "$ref": "@"
+      },
+      "type": {
+        "$ref": "$.resolvableType.source"
+      }
+    },
+    "resolvedAutowireMode": 0,
+    "resource": {
+      "description": "class path resource [readJson.xml]",
+      "file": "D:\\code\\IDEA_workspace\\spring-learn\\spring-demo1\\target\\classes\\readJson.xml",
+      "filename": "readJson.xml",
+      "open": false,
+      "path": "readJson.xml",
+      "readable": true,
+      "uRI": "file:/D:/code/IDEA_workspace/spring-learn/spring-demo1/target/classes/readJson.xml",
+      "uRL": "file:/D:/code/IDEA_workspace/spring-learn/spring-demo1/target/classes/readJson.xml"
+    },
+    "resourceDescription": "class path resource [readJson.xml]",
+    "role": 0,
+    "scope": "",
+    "singleton": true,
+    "synthetic": false
+  }
+]

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<f:table xmlns:f="http://www.w3school.com.cn/furniture"
+         xmlns:t="http://www.w3school.com.cn/t"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.w3school.com.cn/furniture http://www.w3school.com.cn/furniture.xsd
+                http://www.w3school.com.cn/t http://www.w3school.com.cn/t.xsd">
+    <f:name>African Coffee Table</f:name>
+    <f:width>80</f:width>
+    <f:length>120</f:length>
+
+    <t:abc abstract="true" lazy-init="false"></t:abc>
+</f:table>

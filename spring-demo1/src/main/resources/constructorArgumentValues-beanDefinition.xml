@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean name="testBean" class="com.springframework.learn.parentname.TestBean">
+        <constructor-arg index="0" value="得得得得得得得得"/>
+        <constructor-arg index="1" value="11111111"/>
+    </bean>
+
+</beans>
