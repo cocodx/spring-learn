@@ -7,7 +7,8 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
 
+    <bean name="factroyStudent" class="com.springframework.learn.FactroyStudent" />
 
-    <bean name="studentService" class="com.springframework.learn.service.StudentService"/>
+    <bean name="studentService" class="com.springframework.learn.service.StudentService" factory-bean="factroyStudent"/>
 
 </beans>

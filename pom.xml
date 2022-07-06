@@ -21,6 +21,7 @@
         <module>simple-ioc</module>
         <module>springboot-autoconfiguration-analysis</module>
       <module>simple-springioc</module>
+        <module>spring-aop-sendLetter</module>
     </modules>
 
     <groupId>com.springframework.learn</groupId>
