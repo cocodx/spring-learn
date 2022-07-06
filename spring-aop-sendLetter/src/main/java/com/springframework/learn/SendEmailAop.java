@@ -31,6 +31,12 @@ public class SendEmailAop {
         System.out.println("发送成功");
     }
 
+    /**
+     * 这个就是对注入的spring的bean对象，使用HtmlEmail发送邮件的bean工具类进行代理，发送失败
+     * aop切到了这个工具类send方法，发送失败，获取抛出异常（HtmlEmail的json数据），拿到之后，使用新的SendEmail类进行发送
+     * @param joinPoint
+     * @param throwable
+     */
     @AfterThrowing(value = "myPointCut()",throwing = "throwable")
     public void sendError(JoinPoint joinPoint,Throwable throwable){
         System.out.println("发送失败，获取HtmlEmail对象");
